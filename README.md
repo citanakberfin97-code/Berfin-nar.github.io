@@ -109,7 +109,6 @@ The following KPIs were analyzed or engineered during the project:
 
 ## Dashboard Preview
 
-*(Insert dashboard screenshot here)*
 
 ---
 
