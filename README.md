@@ -107,7 +107,22 @@ The following KPIs were analyzed or engineered during the project:
 
 ---
 
-## Dashboard Preview
+## Dashboard Preview 
+
+
+<p align="center">
+  <img src="Dashboard Overview.png" width="900">
+</p>
+
+<p align="center">
+  <img src="Sales Analysis.png" width="900">
+</p>
+
+<p align="center">
+  <img src="revenue trend.png" width="900">
+</p>
+
+
 
 
 ---
