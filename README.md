@@ -1,26 +1,5 @@
 
-# SaaS Financial Performance Analysis
-
-
-
-```mermaid
-flowchart LR
-    A[Raw Data] --> B[Data Cleaning (Pandas)]
-    B --> C[EDA]
-    C --> D[Feature Engineering]
-    D --> E[SQL Analysis]
-    E --> F[Dashboard]
-    F --> G[Insights]
-```
-                                                                             
-
-
-
-
-
-
-                                  
-
+# SaaS Financial Performance Analysis                                        
  
 ## Project Overview
 
