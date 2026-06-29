@@ -1,5 +1,12 @@
 
 # SaaS Financial Performance Analysis
+flowchart LR
+    A[Raw Data] --> B[Cleaning]
+    B --> C[EDA]
+    C --> D[Feature Engineering]
+    D --> E[SQL Analysis]
+    E --> F[Dashboard]
+    F --> G[Insights]
                                                                              
 
 
