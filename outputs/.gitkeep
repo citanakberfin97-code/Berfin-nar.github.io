@@ -5,7 +5,7 @@ companies = ["MSFT", "CRM", "SHOP", "ADBE"]
 
 all_data = []
 
-for company in companies:
+for company in companies: 
     ticker = yf.Ticker(company)
     df = ticker.quarterly_financials.T
 
