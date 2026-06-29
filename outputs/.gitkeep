@@ -1,2 +1,32 @@
-plt.savefig("outputs/chart1.png") 
-df.to_csv("outputs/final_data.csv", index=False)
+import pandas as pd
+import yfinance as yf
+
+companies = ["MSFT", "CRM", "SHOP", "ADBE"]
+
+all_data = []
+
+for company in companies:
+    ticker = yf.Ticker(company)
+    df = ticker.quarterly_financials.T
+
+    df.columns = df.columns.str.strip()
+
+    temp = pd.DataFrame(index=df.index)
+
+    temp["Company"] = company
+    temp["Revenue"] = df.get("Total Revenue")
+    temp["NetIncome"] = df.get("Net Income")
+    temp["OperatingIncome"] = df.get("Operating Income")
+
+    temp = temp.sort_index()
+
+    all_data.append(temp)
+
+final_df = pd.concat(all_data)
+
+final_df.reset_index(inplace=True)
+final_df.rename(columns={"index": "Date"}, inplace=True)
+
+final_df["Revenue_Growth"] = (
+    final_df.groupby("Company")["Revenue"].pct_change()
+)
