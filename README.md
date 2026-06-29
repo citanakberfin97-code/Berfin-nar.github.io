@@ -5,12 +5,13 @@
 ```mermaid
 flowchart LR
     A[Yahoo Finance API] --> B[Data Cleaning (Pandas)]
-    B --> C[EDA]
+    B --> C[Exploratory Data Analysis]
     C --> D[Feature Engineering]
     D --> E[SQL Analysis (DuckDB)]
-    E --> F[Dashboard (Plotly)]
+    E --> F[Interactive Dashboard (Plotly)]
     F --> G[Business Insights]
 ```
+
                                                                              
 
 
