@@ -1,12 +1,16 @@
 
 # SaaS Financial Performance Analysis
+## 🔄 Project Workflow
+
+```mermaid
 flowchart LR
-    A[Raw Data] --> B[Cleaning]
+    A[Yahoo Finance API] --> B[Data Cleaning (Pandas)]
     B --> C[EDA]
     C --> D[Feature Engineering]
-    D --> E[SQL Analysis]
-    E --> F[Dashboard]
-    F --> G[Insights]
+    D --> E[SQL Analysis (DuckDB)]
+    E --> F[Dashboard (Plotly)]
+    F --> G[Business Insights]
+```
                                                                              
 
 
