@@ -1,6 +1,12 @@
-import pandas as pd
+summary = con.execute("""
+SELECT
+    Company,
+    AVG(Revenue) AS avg_revenue,
+    AVG(Revenue_Growth) AS avg_growth,
+    AVG(Magic_Number) AS avg_magic_number,
+    AVG(NetIncome) AS avg_net_income
+FROM saas
+GROUP BY Company
+""").df()
 
-def create_features(df):
-    df["revenue_growth"] = df["revenue"].pct_change()
-    df["profit_margin"] = df["net_income"] / df["revenue"]
-    return df
+summary
