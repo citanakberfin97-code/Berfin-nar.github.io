@@ -21,6 +21,13 @@ The objective is to transform raw financial statements into meaningful business 
 - Plotly
 - yfinance API
 - Google Colab
+- 
+- ## 💡 Key Insights
+
+- Microsoft leads in revenue.
+- Shopify shows strongest growth momentum.
+- SaaS Score highlights performance differences.
+- Revenue varies significantly across companies.
 
 ---
 
