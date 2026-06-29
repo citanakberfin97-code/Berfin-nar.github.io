@@ -1,0 +1,2 @@
+plt.savefig("outputs/chart1.png") 
+df.to_csv("outputs/final_data.csv", index=False)
